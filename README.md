@@ -80,3 +80,11 @@
 - 객체를 설계할 때 역할과 구현을 명확히 분리
 - 객체 설계 시 역할(인터페이스)을 먼저 부여하고, 그 역할을 수행하는 구현 객체 만들기
 
+### 자바 언어의 다형성
+- **오버라이딩**
+- ```java
+public class MemberService {
+  private MemberRepository memberRepository = new MemoryMemberRepository();
+  private MemberRepository memberRepository = new JdbcRepository();
+}
+```
