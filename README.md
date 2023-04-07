@@ -82,7 +82,7 @@
 
 ### 자바 언어의 다형성
 - **오버라이딩**
-- ```java
+```java
 public class MemberService {
   private MemberRepository memberRepository = new MemoryMemberRepository();
   private MemberRepository memberRepository = new JdbcRepository();
