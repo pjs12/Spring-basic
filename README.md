@@ -99,3 +99,20 @@ public class MemberService {
 - 다형성이 가장 중요
 - 스프링은 다형성을 극대화하여 이용할 수 있게 도와줌
 - 스프링에서 이야기하는 제어의 역전(IoC), 의존관계 주입(DI)은 다형성을 활용해서 역할과 구현을 편리  하게 다룰 수 있도록 지원함
+--------
+
+## 좋은 객체 지향 설계의 5가지 원칙(SOLID)
+### SOLID
+- SRP: 단일 책임 원칙(Single Responsibility Principle)
+- OCP: 개방-폐쇄 원칙(Open/Closed Principle)
+- LSP: 리스코프 치환 원칙(Liskov Substitution Principle)
+- ISP: 인터페이스 분리 원칙(Interface Segregation Principle)
+- DIP: 의존관계 역전 원칙(Dependency Inversion Principle)
+
+### SRP 단일 책임 원칙
+- 한 클래스는 하나의 책임만 가져야 함
+- 하나의 책임이라는 것은 모호함
+  - 클 수 있고, 작을 수 있음
+  - 문맥과 상황에 따라 다름
+- 중요한 기준은 변경. 변경이 있을 때 파급 효과가 적으면 단일 책임 원칙을 잘 따른 것
+- ex) UI 변경, 객체의 생성과 사용을 분리
