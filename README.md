@@ -122,3 +122,15 @@ public class MemberService {
 - **다형성**을 활용
 - 인터페이스를 구현한 새로운 클래스를 하나 만들어서 새로운 기능을 구현
 - 지금까지 배운 역할과 구현의 분리 생각해보기
+
+#### OCP 문제점
+```java
+public class MemberService {
+  private MemberRepository memberRepository = new MemoryMemberRepository();   // 기존 코드
+  private MemberRepository memberRepository = new JdbcRepository();           // 변경 코드
+}
+```
+- 구현 객체를 변경하려면 클라이언트 코드를 변경해야 함
+- 분명 다형성을 사용했지만 OCP 원칙을 지킬 수 없음
+- 이 문제의 해결법?
+- 객체를 생성하고, 연관관계를 맺어주는 별도의 조립, 설정자가 필요
