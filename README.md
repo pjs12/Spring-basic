@@ -130,7 +130,7 @@ public class MemberService {
   private MemberRepository memberRepository = new JdbcRepository();           // 변경 코드
 }
 ```
-- 구현 객체를 변경하려면 클라이언트 코드를 변경해야 함
-- 분명 다형성을 사용했지만 OCP 원칙을 지킬 수 없음
+- **구현 객체를 변경하려면 클라이언트 코드를 변경해야 함**
+- **분명 다형성을 사용했지만 OCP 원칙을 지킬 수 없음**
 - 이 문제의 해결법?
 - 객체를 생성하고, 연관관계를 맺어주는 별도의 조립, 설정자가 필요
