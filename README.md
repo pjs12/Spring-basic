@@ -88,3 +88,8 @@ public class MemberService {
   private MemberRepository memberRepository = new JdbcRepository();
 }
 ```
+
+### 다형성의 본질
+- 인터페이스를 구현한 객체 인스턴스를 **실행 시점에 유연하게 변경**할 수 있음
+- 다형성의 본질을 이해하려면 협력이라는 객체사이의 관계에서 시작해야함
+- **클라이언트를 변경하지 않고, 서버의 구현 기능을 유연하게 변경할 수 있음**
